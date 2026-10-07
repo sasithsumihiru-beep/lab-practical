@@ -1,0 +1,14 @@
+html{
+    background: green;
+}
+
+h1{
+    color:blue
+}
+.red-heading{
+    color:red
+}
+#main-title{
+    color:blue;
+    font-size: 40px;
+}
