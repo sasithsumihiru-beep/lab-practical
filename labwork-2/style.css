@@ -1,0 +1,19 @@
+:root { --lms-blue: #4a76f0; --lms-blue-dark: #3a5fd0; }
+
+.bg-lms { background-color: var(--lms-blue); }
+
+.btn-lms {
+  background-color: var(--lms-blue);
+  border-color: var(--lms-blue);
+  color: #fff;
+}
+.btn-lms:hover, .btn-lms:focus {
+  background-color: var(--lms-blue-dark);
+  border-color: var(--lms-blue-dark);
+  color: #fff;
+}
+
+.feature-icon { font-size: 2.5rem; color: var(--lms-blue); }
+
+.course-card { transition: transform .2s, box-shadow .2s; }
+.course-card:hover { transform: translateY(-4px); box-shadow: 0 .5rem 1rem rgba(0,0,0,.12); }
