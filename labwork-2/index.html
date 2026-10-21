@@ -32,6 +32,26 @@
     <!-- 2. Hero Section -->
     <header class="p-5 text-center bg-light border-bottom">
         <div class="container py-5">
+            <h1>
+                <span id="greeting-msg"></span>
+            </h1>
+
+            <script>
+                // JavaScript to display a greeting message based on the time of day
+                const greetingMsg = document.getElementById('greeting-msg');
+                const currentHour = new Date().getHours();
+                let greeting;
+
+                if (currentHour < 12) {
+                    greeting = "Good Morning!";
+                } else if (currentHour < 18) {
+                    greeting = "Good Afternoon!";
+                } else {
+                    greeting = "Good Evening!";
+                }
+
+                greetingMsg.textContent = greeting;
+            </script>
             <h1 class="display-4 fw-bold text-dark">Welcome to the LMS Platform</h1>
             <p class="col-lg-8 mx-auto lead text-muted">
                 Your gateway to knowledge and success. Explore a wide variety of courses and resources.
